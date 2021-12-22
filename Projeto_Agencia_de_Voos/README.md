@@ -1,3 +1,11 @@
-# FECP3
-Checkpoint 3 - Front End I 
-Grupo: Anna Gabriele Ribeiro Lopes, Denny Ribeiro, Rosana Sebold Gomes Pereira, Felipe Arruda, Phillipe Borges.
+# Projeto Agencia de Voos
+
+Projeto de finalização de bimestre no curso de Front End 1, da Digital House.
+Feito em parceria com 
+- Anna Gabriele Ribeiro Lopes
+- Rosana Sebold Gomes Pereira
+- Felipe Arruda
+- Phillipe Borges.
+
+
+
