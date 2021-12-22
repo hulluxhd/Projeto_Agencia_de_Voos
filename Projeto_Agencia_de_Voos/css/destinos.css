@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Vidaloka&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+   
+  }
+
+.container{
+    width: 100%;
+    padding: 0%;
+    margin: 0px;
+}
+
+#banner{
+    background-image: url("https://wallpapercave.com/wp/wp4201664.jpg");
+    height: calc(100vh - 106.56px);
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+}
+
+main{
+    width: 100vw;
+}
+
+h1{
+    background-color: rgba(250, 235, 215, 0.781);
+    width: 40%;
+    margin: 0px auto;
+    border-radius: 9px;
+    padding: 15px;
+}
+
+.separacao{
+    border: rgba(129, 163, 163, 0.26) solid 1px;
+    padding: 0px;
+    width: 35%;
+    margin: 15px auto;
+    border-radius: 9px;
+}
+
+.card-img-top img{
+    height: 18rem;
+    width: 21.9rem;
+}
+
+.card{
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/airplane.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bom Trajeto</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="./img/logo1.png" class="bi me-2 ms-5" width="90%" height="90%"></img>
+      </a>
+      
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./index.html" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="./destinos-nacionais.html" class="nav-link px-2 link-dark">Destinos Nacionais</a></li>
+        <li><a href="./destinos-internacionais.html" class="nav-link px-2 link-dark">Destinos Internacionais</a></li>
+        <li><a href="./sobrenos.html" class="nav-link px-2 link-dark">Sobre nós</a></li>
+        <li><a href="./contato.html" class="nav-link px-2 link-dark">Contato</a></li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-light me-5 "><a class="text-decoration-none"
+            href="./login.html">Login </a></button>
+      </div>
+    </header>
+  </div>
+  <main>
+    <section id="banner">
+      <div class="px-4 py-5 d-flex d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center align-items-center flex-column align-items-center">
+        <div class="col-lg-6 ">
+          <p class="lead mb-4 sobre-nos"> Somos uma empresa com mais de 20 anos de mercado.<br> Trabalhamos para que
+            você possa ir aonde quiser.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="./destinos-nacionais.html"><button type="button" class="btn-banner btn btn-primary btn-lg px-4 gap-3">Destinos
+                Nacionais</button> </a>
+            <a href="./destinos-internacionais.html"><button type="button" class="btn-banner btn btn-success btn-lg px-4">Destinos
+                Internacionais</button> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    </section>
+
+    <section id="griddestinos">
+
+      <div class="container-fluid">
+
+        <h2 class="mb-4 mt-4 text-center">Principais Destinos Internacionais</h2>
+
+        <div class="row">
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos new-york mb-4"> </div>
+              <p class="text-center"> Nova York - EUA</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#new-york">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos london mb-4"> </div>
+              <p class="text-center">Londres - Inglaterra</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#londres">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos auckland mb-4"> </div>
+              <p class="text-center">Auckland - Nova Zelândia</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#auckland">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos berlin mb-4"> </div>
+              <p class="text-center">Berlin - Alemanha</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#berlin">Saiba
+                Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos egito mb-4"> </div>
+              <p class="text-center">Egito</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#egito">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos dubai mb-4"> </div>
+              <p class="text-center">Dubai - Emirados Arabes</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#dubai">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos disney mb-4"> </div>
+              <p class="text-center">Disney - EUA</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#disney">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos las-vegas mb-4"> </div>
+              <p class="text-center">Las Vegas - EUA </p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#las-vegas">Saiba
+                Mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row align-items-center justify-content-center mb-2">
+        <a href="destinos-internacionais.html">
+          <button class="mt-4 btn btn-warning btn-lg btn-outline-light">Ver pacotes</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="griddestinos" class="destinos mb-4 d-flex justify-content-center">
+      <div class="container-fluid">
+        <h2 class="mb-4 mt-4 text-center">Principais Destinos Nacionais</h2>
+
+        <div class="row">
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos rj mb-4"> </div>
+              <p class="text-center"> Rio de Janeiro</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#rj">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos curitiba mb-4"> </div>
+              <p class="text-center">Curitiba - Paraná</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#curitiba">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos salvador mb-4"> </div>
+              <p class="text-center">Salvador - Bahia</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#salvador">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos sp mb-4"> </div>
+              <p class="text-center"> São Paulo</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#sp">Saiba
+                Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos foz mb-4"> </div>
+              <p class="text-center">Foz do Iguaçu - Paraná</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#foz">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos amazonas mb-4"> </div>
+              <p class="text-center"> Amazonas</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#amazonas">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos minas mb-4"> </div>
+              <p class="text-center">Minas Gerais</p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#minas">Saiba
+                Mais</button>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-2">
+              <div class="img-destinos fortaleza mb-4"> </div>
+              <p class="text-center">Fortaleza - Ceará </p>
+              <button class="btn btn-info btn-outline-light" data-bs-toggle="modal" data-bs-target="#fortaleza">Saiba
+                Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-4 d-flex flex-column align-items-center mb-2">
+          <a href="destinos-nacionais.html">
+            <button class="mt-4 btn btn-warning btn-lg btn-outline-light">Ver pacotes</button>
+          </a>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="new-york" tabindex="-1" role="dialog" aria-labelledby="new-york" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">Nova York</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo. Entre seus pontos emblemáticos, destacam-se arranha-céus, como o Empire State Building, e o enorme Central Park. O teatro da Broadway fica em meio às luzes de neon da Times Square.</p>
+            <p>Conte conosco para conhecer a cidade que nunca dorme!</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="londres" tabindex="-1" role="dialog" aria-labelledby="londres" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">Londres</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>Londres, capital da Inglaterra e do Reino Unido, é uma cidade do século 21 com uma história que remonta à era romana. Seu centro abriga as sedes imponentes do Parlamento, a famosa torre do relógio do Big Ben e a Abadia de Westminster, local de coroação dos monarcas britânicos. Do outro lado do rio Tâmisa, a roda gigante London Eye tem vista panorâmica do complexo cultural da margem sul e de toda a cidade.</p>
+            <p>A cidade da rainha te espera!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="auckland" tabindex="-1" role="dialog" aria-labelledby="auckland" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Auckland</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Auckland é uma importante cidade próxima a 2 grandes portos no norte da Ilha Norte da Nova Zelândia. No centro da cidade, na Queen Street, a emblemática Sky Tower tem vista para o Porto Viaduct, repleto de iates e contornado por bares e cafés. O Auckland Domain, parque mais antigo da cidade, fica próximo a um vulcão extinto e abriga os Wintergardens. Perto do centro, a Mission Bay Beach tem um calçadão à beira-mar. 
+            </p>
+
+            <p>
+             Já fez algo de novo hoje? Embarque conosco nessa aventura!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="berlin" tabindex="-1" role="dialog" aria-labelledby="berlin" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Berlin
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>Berlim, a capital da Alemanha, existe desde o século XIII. Algumas recordações da história turbulenta da cidade no século XX são o Memorial do Holocausto e as ruínas do Muro de Berlim, repletas de grafites. Usado como divisão de fronteiras durante a Guerra Fria, o Portão de Brandemburgo, construído no século XVIII, tornou-se um símbolo da reunificação. A cidade também é conhecida por seu cenário artístico e seus monumentos modernos, como a Filarmônica de Berlim, dourada e de telhado triangular, construída em 1963.</p>
+            <p>
+              Voê vai se impressionar com essa cidade que é um museu a céu aberto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="egito" tabindex="-1" role="dialog" aria-labelledby="egito" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Egito
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              O Egito, um país que liga o nordeste da África ao Oriente Médio, remonta ao tempo dos faraós. Monumentos construídos milênios atrás ficam localizados ao longo do fértil vale do rio Nilo, como as colossais Pirâmides de Gizé e a Esfinge, além do Templo de Karnak (repleto de hieróglifos) e das tumbas do Vale dos Reis, ambos em Luxor. A capital, Cairo, abriga monumentos otomanos como a Mesquita de Muhammad Ali e o Museu Egípcio, com uma coleção de antiguidades. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="dubai" tabindex="-1" role="dialog" aria-labelledby="dubai" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Dubai
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Dubai é uma cidade e um emirado dos Emirados Árabes Unidos conhecida pelos shoppings de luxo, pela arquitetura ultramoderna e pela animada vida noturna. Burj Khalifa, uma torre de 830 metros de altura, domina a linha do horizonte repleta de arranha-céus. Na base, há a Fonte de Dubai, com jatos de água e luzes coreografados ao som de música. Nas ilhas artificiais próximas à costa, fica o Hotel Atlantis, um resort com parques aquáticos e de animais marinhos.
+            </p>
+            <p>
+              Vem conhecer essa cidade que é diferente de tudo que você já viu!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="disney" tabindex="-1" role="dialog" aria-labelledby="disney" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Disney
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Orlando, uma cidade no centro da Flórida, abriga mais de uma dezena de parques temáticos. O mais conhecido é o Walt Disney World, composto por parques como o Magic Kingdom e o Epcot, além de parques aquáticos. Outra atração importante é o Universal Orlando, com o Universal Studios e o Islands of Adventure, sendo que o Wizarding World of Harry Potter abrange áreas dos dois parques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="las-vegas" tabindex="-1" role="dialog" aria-labelledby="las-vegas" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Las Vegas
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Las Vegas, localizada no deserto de Mojave, em Nevada, é uma cidade turística famosa pela vida noturna vibrante, com cassinos 24 horas e outras opções de entretenimento. Sua rua principal é The Strip, com quase 7 quilômetros de comprimento. A avenida concentra hotéis temáticos, com atrações sofisticadas, como as fontes sincronizadas com música e réplicas de uma pirâmide egípcia, do Grande Canal de Veneza e da Torre Eiffel.
+            </p>
+            <p>
+              Vem com a gente! O que acontece em Vegas, fica em Vegas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="rj" tabindex="-1" role="dialog" aria-labelledby="rj" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">Rio de Janeiro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>Rio de Janeiro (informalmente referida como Rio) é um município brasileiro, capital do estado
+              homônimo, situado no Sudeste do país. Maior destino turístico internacional no Brasil, da América
+              Latina e de todo o Hemisfério Sul, a capital fluminense é a cidade brasileira mais conhecida no
+              exterior, funcionando como um "espelho", ou "retrato" nacional, seja positiva ou negativamente. É a
+              segunda maior metrópole do Brasil (depois de São Paulo), a sexta maior da América e a trigésima quinta do
+              mundo. Sua população estimada pelo IBGE para 1.º de julho de 2021 era de 6 775 561 habitantes. Tem o
+              epíteto de Cidade Maravilhosa e aquele que nela nasce é chamado de carioca.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="curitiba" tabindex="-1" role="dialog" aria-labelledby="curitiba" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Curitiba</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Curitiba é a capital do estado do Paraná, na região sul do Brasil. A Torre Panorâmica, que tem um observatório em sua parte superior, destaca-se na silhueta da cidade. Conhecida como centro cultural, Curitiba abriga vários espaços para apresentações, como a Ópera de Arame, uma estrutura de aço tubular com telhado transparente, e o enorme Centro Cultural Teatro Guaíra, que apresenta uma programação variada. 
+            </p>
+
+            <p>
+              Uma cidade cheia de parques, planejada e pronta para te receber! Vem conhecer o Brasil!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="salvador" tabindex="-1" role="dialog" aria-labelledby="salvador" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Salvador
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>Salvador, a capital do estado da Bahia no nordeste do Brasil, é conhecida pela arquitetura colonial portuguesa, pela cultura afrobrasileira e pelo litoral tropical. O bairro do Pelourinho é seu coração histórico, com vielas de paralelepípedo terminando em praças grandes, prédios coloridos e igrejas barrocas, como São Francisco, com trabalhos em madeira revestidos com ouro.</p>
+            <p>
+              A cidade que respira história do Brasil. Vem com a gente!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="sp" tabindex="-1" role="dialog" aria-labelledby="sp" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              São Paulo
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="foz" tabindex="-1" role="dialog" aria-labelledby="foz" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Foz do Iguaçu
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Foz do Iguaçu, cidade no estado brasileiro do Paraná, é a principal base para visitar as famosas Cataratas do Iguaçu, uma das maiores cachoeiras do mundo. Com uma extensão de 2,7 km e atravessando a fronteira com a Argentina, as cataratas são formadas por centenas de cascatas, entre elas a Garganta do Diabo, com 80 m de altura. Passeios em barcos infláveis durante os quais os turistas ficam encharcados são uma forma muito comum de apreciar esse espetáculo natural.
+            </p>
+            <p>
+              Vem se impressionar com a beleza natural brasileira! Você não vai se arrepender.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="amazonas" tabindex="-1" role="dialog" aria-labelledby="amazonas" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Amazonas
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Amazonas é coberto quase na sua totalidade pela floresta tropical da Amazónia. A capital, Manaus, é um porto fluvial com pontos de referência que datam do ciclo da borracha de finais do século XIX, incluindo o Teatro Amazonas, uma grande casa de ópera. A cidade marca o "Encontro das Águas", onde o rio Negro, de água negra, e o rio Solimões se juntam para formar o rio Amazonas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="minas" tabindex="-1" role="dialog" aria-labelledby="minas" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Minas Gerais
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Minas Gerais, um grande estado continental no sudeste do Brasil, é conhecido por cidades da era colonial que remetem à corrida do ouro no país no século 18. Entre elas estão São João del Rei, Tiradentes e Ouro Preto, a antiga capital, todas com ruas de paralelepípedo, mansões ornamentadas e igrejas barrocas decoradas pelo escultor Aleijadinho.O famoso trem a vapor Maria Fumaça liga Tiradentes a São João del Rei. 
+            </p>
+            <p>
+              Pão de queijo, tutu, feijão tropeiro, queijo da serra da canastra. Vem pra minas, você não vai se arrepender.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="fortaleza" tabindex="-1" role="dialog" aria-labelledby="fortaleza" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Fortaleza
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-5 py-4">
+            <p>
+              Fortaleza é a capital do estado do Ceará, no Nordeste brasileiro. A cidade é conhecida por suas praias, com falésias vermelhas, palmeiras, dunas e lagoas. As tradições folclóricas da cidade podem ser vistas em apresentações de dança no Theatro José de Alencar, construção em estilo art nouveau inaugurada em 1910. Outro destaque arquitetônico é a Catedral Metropolitana, em estilo neogótico.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="depoimentos mb-4 d-flex justify-content-center text-center">
+      <div class="container marketing">
+        <h2 class="mb-4 mt-4">Depoimentos</h2>
+        <!-- Three columns of text below the carousel -->
+        <div class="row mb-4">
+          <div class="col-lg-4 mb-5">
+            <div class="foto-cliente mb-2">
+              <img src="./img/Marina.jpg" alt="foto marina">
+            </div>
+            <h2>Marina Almeida</h2>
+            <p>Roteiro perfeito. Foram as melhores férias da minha vida!!</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="foto-cliente mb-2 mt-2">
+              <img src="./img/carlos.jpg" alt="Foto carlos">
+            </div>
+            <h2>Carlos Prado</h2>
+            <p>Minha família amou nossa viagem! Vivemos momentos inesquecíveis.</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="foto-cliente mb-2 mt-2">
+              <img src="./img/Amelia.jpg" alt="Foto amelia">
+            </div>
+            <h2>Amélia Fontes</h2>
+            <p>Já viajei com diferentes agências, essa é de longe a melhor de todas.</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="foto-cliente mb-2 mt-2">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNWI0MWY0OTYtMTEzZC00NTU1LTg3YjYtZGJiNzI5YzIyMmZmXkEyXkFqcGdeQXVyMTU3MzMwNQ@@._V1_.jpg"
+                alt="Foto helena">
+            </div>
+            <h2>Helena Way</h2>
+            <p>Foi a melhor viagem da minha vida!!</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="foto-cliente mb-2 mt-2">
+              <img src="https://pt-static.z-dn.net/files/dbd/a2bb4379cd7badcb4ecda9d86ca835d5.jpg" alt="Foto gerard">
+            </div>
+            <h2>Geraldo Caminho</h2>
+            <p>A equipe da agência é muito atenciosa!</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="foto-cliente mb-2 mt-2">
+              <img
+                src="https://s2.glbimg.com/MOB0OCLTQw2JhDioNAHa8eQiNj8=/top/e.glbimg.com/og/ed/f/original/2020/08/16/brandon.jpg"
+                alt="Foto brendon">
+            </div>
+            <h2>Brendon Urie</h2>
+            <p>Aqui eu encontrei o melhor custo benefício.</p>
+            <div class="rating">
+              <img src="./img/5-star.png" alt="5 estrelas">
+            </div>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </section>
+    <section class="reservas mb-4 mt-4 d-flex justify-content-center text-center">
+      <div class=" col-8 h-100 p-5 text-white bg-warning rounded-3">
+        <h2>Solicite uma cotação</h2>
+        <p>Trabalhamos com os principais destino e oferecemos pacotes totalmente customizáveis</p>
+        <a href="./contato.html"><button class="btn btn-outline-light" type="button">Solicitar Cotação</button></a>
+      </div>
+      </div>
+    </section>
+  </main>
+  <div class="fab-btn">
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <button class="fab" title="Iniciar chat" aria-label="Iniciar chat">
+        <i class="material-icons-outlined">question_answer</i>
+      </button>
+    </a>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 2021 Bom trajeto SA</p>
+
+    <a href="/"
+      class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-center">
+      <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="./sobrenos.html" class="nav-link px-2 text-muted">Sobre nós</a></li>
+      <li class="nav-item"><a href="./login.html" class="nav-link px-2 text-muted">Login</a></li>
+    </ul>
+  </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Vidaloka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: seashell;
+}
+
+  header li a {
+    text-transform: uppercase;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header li a:hover{
+    background: rgb(229, 106, 84);
+    color: white;
+  }
+
+
+.principal{
+    padding: 70px 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    font-family: 'Vidaloka', serif;
+    color: rgb(229, 106, 84);
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.intro{
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    width: 500px;
+}
+fieldset{
+    border: none;
+    padding-bottom: 10px;
+}
+input{
+    width: 90%;
+    border: solid 1px lightgray;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+}
+input:hover{
+background: seashell;
+transition: all 0.5s ease-in-out;
+}
+input:focus{
+    border-color: rgb(229, 106, 84);
+    box-shadow: 0 0 .5em rgb(229, 106, 84);
+}
+
+.login{
+    display: block;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 0.5em lightgray;
+    margin: 48px 0 0;
+    padding: 20px 0 28px;
+    width: 400px;
+}
+.recuperarsenha{
+    margin-top: 16px;
+}
+.recuperarsenha a{
+    color: rgb(229, 106, 84);
+    text-decoration: none;
+}
+.recuperarsenha a:hover{
+    text-decoration: underline;
+}
+.divisor {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+button {
+    color: white;
+    font-size: 18px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+#entrar{
+    background: rgb(229, 106, 84);
+    width: 90%;
+}
+#entrar:hover{
+    background: rgb(221, 94, 71);
+
+}
+#novaconta{
+    background: rgb(74, 49, 145);
+}
+#novaconta:hover{
+    background-color: rgb(57, 32, 124);
+}
+.fab{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(74, 49, 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fab-btn a{
+    text-decoration: none;
+}
+.fab-btn{
+    display:block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.fab:hover{
+    background-color: rgb(57, 32, 124);
+    box-shadow: 0 0 0.5em lightgray;
+}
+
+/*--------------------------------------*/
+
+@media(max-width: 480px){
+
+    .principal{
+        padding: 40px 20px 0;
+        justify-content: center;
+    }
+    h1{
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+    
+    .intro{
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+    }
+    input{
+        font-size: 14px;
+    }
+    .login{
+    padding: 15px 0;
+    margin-top: 25px;
+    }
+    button {
+        font-size: 14px;
+        padding: 0 16px;
+        line-height: 48px;
+    }
+    .fab-btn{
+        right: 20px;
+        bottom:20px;
+    }
+}
+@media(min-width: 481px) and (max-width:999px){
+    .principal{
+        justify-content: center;
+    }
+    .intro{
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+    }
+}
+@media(min-width: 832px) and (max-width:1023px){
+    .principal{
+        justify-content: center;
+    }
+    .intro{
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        width: 400px;
+        padding-top: 20px;
+    }
+}
+@media(min-width: 1024px) and (max-width:1200px){
+    .principal{
+        padding: 30px 50px 0;
+
+    }
+    .intro{
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        width: 470px;
+    }
+}

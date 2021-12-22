@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/airplane.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bom Trajeto</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="./img/logo1.png" class="bi me-2 ms-5" width="90%" height="90%"></img>
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./index.html" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="./destinos-nacionais.html" class="nav-link px-2 link-dark">Destinos Nacionais</a></li>
+        <li><a href="./destinos-internacionais.html" class="nav-link px-2 link-dark">Destinos Internacionais</a></li>
+        <li><a href="./sobrenos.html" class="nav-link px-2 link-dark">Sobre nós</a></li>
+        <li><a href="./contato.html" class="nav-link px-2 link-dark">Contato</a></li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-light me-5 "><a class="text-decoration-none"
+            href="./login.html">Login </a></button>
+      </div>
+    </header>
+  </div>
+  <main>
+
+    <section id="banner-contato"class="banner-contato d-flex flex-row justify-content-center align-items-center mb-5">
+      <div class="bg-light rounded-3 p-4">
+      <p class="fs-5 text-center">Preencha o nosso formulário de contato abaixo.</p> 
+      <p class="fs-5 text-center">Respoderemos o mais breve possível!</p> 
+    </div>
+    </section>
+    
+    <section class="form-contato d-flex justify-content-center mb-5 mt-2">
+      <form class="col-sm-4">
+        <div class="mb-3">
+          <label for="nome-completo" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone">
+        </div>
+        <div class="mb-3">
+          <label for="destino" class="form-label">Para onde deseja viajar:</label>
+          <input type="text" class="form-control" id="destino">
+        </div>
+        <div class="mb-3">
+          <label for="data-viajem" class="form-label">Data Estimada da Viagem:</label>
+          <input type="date" class="form-control" id="data-viajem">
+        </div>
+        <div class="mb-3">
+          <label for="info" class="form-label" >Mais informações:</label> <br>
+          <textarea name="info" id="info" cols="68" rows="4" style="width: 100%;"
+            placeholder="especifique os detalhes sobre sua viagem, locais de gostaria de visitar, e quantidade de dias"></textarea>
+        </div>
+
+<div class="btn-contato">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-danger">Cancelar</button>
+</div>
+      </form>
+
+    </section>
+
+  
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <footer>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2021 Bom trajeto SA</p>
+
+      <a href="/"
+        class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-center">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#griddestinos" class="nav-link px-2 text-muted">Destinos</a></li>
+        <li class="nav-item"><a href="./sobrenos.html" class="nav-link px-2 text-muted">Sobre nós</a></li>
+        <li class="nav-item"><a href="./login.html" class="nav-link px-2 text-muted">Login</a></li>
+      </ul>
+    </footer>
+    </div>
+</body>
+
+</html>

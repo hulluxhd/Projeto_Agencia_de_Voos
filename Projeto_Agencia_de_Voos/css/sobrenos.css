@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Vidaloka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: seashell
+   
+  }
+
+.container{
+  margin: 0rem;
+  padding: 0;
+}
+
+  header{
+    position: sticky;
+    top: 0;
+    background:seashell;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  header li a {
+    text-transform: uppercase;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header li a:hover{
+    background: rgb(229, 106, 84);
+    color: white;
+  }
+
+  .sobre-nos {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 20px;
+    border-radius: 10px 0;
+    margin-top: 250px;
+    text-align: center;
+  }
+  
+  
+footer {
+    width: 100vw;
+    background-color: seashell;
+  }
+
+  /* ------------------ SOBRE NÓS -------------------  */
+
+.time{
+    
+    z-index: -1;
+    
+  } 
+  
+  #equipe{
+    gap:1.3rem;
+    
+    padding-bottom: 1rem;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .membro {
+    transition: all .3s ease-in-out;
+    opacity: 0.9;
+  
+  }
+  
+  .membro:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .card{
+    width: 21rem;
+    
+  }

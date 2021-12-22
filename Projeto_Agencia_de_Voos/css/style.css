@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Vidaloka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+   
+  }
+
+.container{
+  margin: 0rem;
+  padding: 0;
+}
+
+  header{
+    position: sticky;
+    top: 0;
+    background:seashell;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  header li a {
+    text-transform: uppercase;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header li a:hover{
+    background: rgb(229, 106, 84);
+    color: white;
+  }
+
+  #banner{
+    background-image: url(../img/top-view-tourist-items-arrangement.jpg) ;
+    background-attachment: fixed;
+  }
+
+  
+  .sobre-nos {
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 1.6rem 0;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+
+
+.img-destinos {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.img-destinos:hover {
+  transform:scale(1.1);
+}
+
+.new-york {
+  background-image: url(http://viva-mundo.com/sites/default/files/images/posts/NewYork.jpg);
+}
+
+.berlin {
+  background-image: url(https://www.lingua-institut.com/themes/default/ressources/img/sejours/berlin.jpg);
+}
+
+.auckland {
+  background-image: url(https://www.australiancentre.com.br/site/wp-content/uploads/2018/06/vista-da-cidade-auckland.jpg);
+}
+
+.london {
+  background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/09/93/6a/89.jpg);
+}
+
+.egito {
+  background-image: url(https://www.eusemfronteiras.com.br/wp-content/uploads/2019/09/120701535_m.jpg);
+}
+
+.dubai {
+  background-image: url(https://assistentedeviagem.com.br/blog/wp-content/uploads/2021/04/dubai.jpg);
+}
+
+.disney {
+  background-image: url(https://ogimg.infoglobo.com.br/in/25161878-97c-45c/FT1086A/Personagens-DisneyRoupa-50-anos.png);
+}
+
+.las-vegas {
+  background-image: url(https://www.daninoce.com.br/wp-content/uploads/2017/11/o-que-voce-precisa-saber-antes-de-ir-a-las-vegas-dani-noce-imagem-destaque-960x625.jpg);
+}
+
+.rj {
+  background-image: url(https://super.abril.com.br/wp-content/uploads/2017/12/rio-de-janeiro.png?w=1024);
+}
+
+.curitiba {
+  background-image: url(https://viajarverde.com.br/wp-content/uploads/2017/04/00001202-810x540.jpg);
+}
+
+.salvador {
+  background-image: url(https://vemvoar.voeazul.com.br/wp-content/uploads/2018/10/conheca-salvador-e-se-apaixone-pela-capital-baiana.jpeg);
+}
+
+.sp {
+  background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2017/12/istock-842960000.jpg);
+}
+
+.foz {
+  background-image: url(http://www.loumarturismo.com.br/img/passeios-860x600/cataratas-860x600.jpg);
+}
+
+.amazonas {
+  background-image: url(https://veja.abril.com.br/wp-content/uploads/2017/03/rio-amazonas-20060602-031.jpg?quality=70&strip=info&w=1024);
+}
+
+.minas {
+  background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ab/00/bf/praca-tiradentes-in-the.jpg?w=700&h=500&s=1);
+}
+
+.fortaleza {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/79/Fortaleza%2C_Brazil_%284%29.jpg);
+}
+
+.rating img{
+  width: 100px;
+}
+
+.depoimentos {
+  background-color: seashell;
+}
+.foto-cliente img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+
+.fab{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(250, 221, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fab-btn a{
+  text-decoration: none;
+}
+.fab-btn{
+  display:block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.fab:hover{
+  background: rgb(229, 106, 84);
+  box-shadow: 0 0 0.2em white;
+}
+
+footer {
+  width: 100vw;
+  background-color: seashell;
+}
+
+
+ @media (min-width: 375px) {
+    .subir {
+      margin-top: -200px;
+    }
+} 
+
+/* ------------------ BANNER PAGINAS -------------------  */
+.banner-destinos-int, #banner-nac, #banner {
+  width:100vw;
+  background-size: cover;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+/* ------------------ DESTINOS INTERNACIONAIS -------------------  */
+
+.banner-destinos-int {
+  background-image: url(https://media.cntraveler.com/photos/5b914e80d5806340ca438db1/16:9/w_2560%2Cc_limit/BrandenburgGate_2018_GettyImages-549093677.jpg);
+  background-position: top 40px;
+}
+
+.h1-destinos-int {
+  background-color: rgba(255, 255, 255, 0.616);
+}
+
+/* ------------------ CONTATO -------------------  */
+.btn-contato {
+  text-align: center;
+}
+
+.banner-contato {
+  background-color: rgb(57, 32, 124);
+  height: 70vh;
+  background-image: url(../img/pink-suitcase-with-hat-and-globe-on-it.jpg);
+  background-repeat: no-repeat;
+  background-position:bottom ;
+  background-size: cover;
+}
+
+/* ------------------ DESTINOS NACIONAIS -------------------  */
+
+#banner-nac {
+  background-image: url(https://vejario.abril.com.br/wp-content/uploads/2020/12/CRISTO-REDENTOR-CORCOVADO-RJ-19.jpg);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
